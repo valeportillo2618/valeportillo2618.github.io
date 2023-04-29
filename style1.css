@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #18e1fc;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background-color: #142bf8;
+}
+
+h1,h2{
+    font-family: serif,sans-serif,monospace;
+}
+
+p{
+    font-family: serif,sans-serif,monospace;
+}

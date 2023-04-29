@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width-device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <body bgcolor="#FFF5EE">
+        <ul class="menu">
+            <li><a href="Pagina principal.html">Pagina principal</a></li>
+            <li><a href="Textos.html">Textos</a></li>
+            <li><a href="Tablas.html">Tablas</a></li>
+            <li><a href="Formularios.html">Formularios</a></li>
+        </ul>
+<br><br>
+<center>
+    <h1>CONTABILIDAD</h1>
+    <h2>HISTORIA DE LA CONTABILIDAD</h2>
+    <p>Los formularios de las paginas web se ocupan principalmente para la obtencion de informacion<br>
+    de los usuarios para almacenar una base de datos y llevar y llevar un orden en cuanto a ello se refiere</p>
+    <p>Cada sentencia en el siguiente formulario se ocupara para un tipo de registro de diferente, algunos solo permiten<br>
+    un tipo de texto en especifico y otras se ocupan para uno o mas registros en una sola sentencia</p>
+</center>
+    <form>
+        <!--La etiqueta form crea la posibilidad de generar formularios-->
+        <fieldset>
+            <!--La etiqueta fieldset permite la organizacion en grupos los campos de un formulario-->
+            <legend>Formulario 1</legend>
+            <br>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Nombre"><br><br>
+            <!--En las etiquetas input se registra el tipo de texto que se almacenara en la sentencia,
+            text permite guardar todo tipo de dato sin importar si es numerico, con simbolos o solo letras-->
+
+            <label>Contraseña</label>
+            <input type="text" placeholder="Contraseña"><br><br>
+            <!--El tipo de dato password se ocupa en datos privados, para el no reconocimiento del dato escrito-->
+            
+            <label>Curso</label>
+            <input type="radio" name="Curso" value="PaginasWeb">Creacion de paginas web
+            <input type="radio" name="Curso" value="BD">Base de datos
+            <input type="radio" name="Curso" value="Aplicaciones">Desarrollo de apllcacion
+            <!--El tipo de dato radio permite la seleccion de una opcion pero no permite duplicaciones, solo
+            guardando un valotr-->
+
+            <label>Lenguajes del curso</label><br>
+            <input type="checkbox" name="Lenguajes" value="html">html<br>
+            <input type="checkbox" name="Lenguajes" value="css">css<br>
+            <input type="checkbox" name="Lenguajes" value="java">java<br>
+            <input type="checkbox" name="Lenguajes" value="php">php<br>
+            <input type="checkbox" name="Lenguajes" value="mysql">mysql><br><br>
+            <!--El tipo de dato checkbox genera varios datos a elegir y permite la eleccion de uno a todas las opciones creadas-->
+
+            <label>Grupo:</label>
+            <select>
+                <option>Grupo 1</option>
+                <option>Grupo 2</option>
+                <option>Grupo 3</option>
+                <option>No tengpo grupo</option>
+            </select>
+            <br><br>
+            <!--La etiqueta select genera una lista de seleccion la cual no ocupara mucho espacio, siendo , mas eficiente y compacta-->
+
+            <label>Comentario</label>
+            <textarea name="Comentario" rows="10" cols="70" placeholder="Escribe tu comentario"></textarea><br><br>
+            <!--La etiqueta textarea genera un cuadro en el cual se guardara un texto de gran tamaño usados
+            generalmente para comentarios-->
+
+            <input type="button" class="bt" value="Enviar datos">
+            <input type="reset" class="bt" value="Borrar datoa">
+            <input type="file" class="bt"value="Examinar"><br><br>
+            <!--Los botones tienen valores en especifico que se ocuparan segun la pagina web
+            button permite enviar datos pero nesecita la funcion de avance y la coneccion de base de datos,
+            reset borrara los datos ya registrados en el formulario, file buscara un documento en las carpetas
+            para el envio de este-->
+        </fieldset>
+    </form>
+</body>
+</html>
