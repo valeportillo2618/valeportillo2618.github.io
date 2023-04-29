@@ -1,0 +1,413 @@
+/* Barrade Navegacion */
+
+.navbar {
+    padding: 2rem;
+    background-color: rgba(96, 194, 224, 0.89);
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos generales */
+
+section {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.seccion-oscura {
+    color: wheat;
+    background-color: brown;
+}
+
+.seccion-clara {
+    color: aquamarine;
+    background-color: rgb(66, 6, 6);
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: bisque;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+.texto-negro {
+    color: aqua;
+}
+
+.texto-blanco {
+    color: royalblue;
+}
+
+/* Seccion Hero*/
+
+.hero {
+    background-color: chocolate;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: rgb(110, 52, 52);
+}
+
+/* Sobre mi */
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Experiencia */
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: rgb(195, 76, 241);
+    background-color: #3b3b3b;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: greenyellow;
+    background-color: rgb(240, 184, 245);
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.barge {
+    margin: 5px;
+}
+
+/* Proyectos */
+    
+.proyectos-recientes {
+    padding: 40px;
+}
+
+proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: rgb(133, 162, 248);
+    font-size: 60px;
+    margin: 10px;
+}
+
+/* Articulos */
+
+.articulos {
+    min-height: 500px;
+    padding: 30px;
+}
+
+.articulos .card {
+    width: 80%;
+    max-width: 600px;
+    margin: 25px;
+}
+
+.articulos card-header {
+    font-weight: bold;
+}
+
+/* Testimonios */
+
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.testimonio-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.textimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: rgb(87, 87, 247);
+}
+
+/* Contacto */
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(96, 190, 159);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 3px white;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .description {
+    color: rosybrown;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: antiquewhite;
+    font-weight: bold;
+    background-color: blanchedalmond;
+     border: 2px snow rgb(red, green, rgb(106, 106, 235));
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: aliceblue;
+    color: rgb(77, 57, 57);
+}
+
+.contacto button i {
+    color:white;
+    font-size: 1.3rem;
+    transition: all0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+    color: rgb(red, green, blue);
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+    min-height: 500px;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    padding: 2px;
+    margin: 10px;
+    border: 2px saddlebrown;
+    border-radius: 50%;
+    transition: all 0.2ms ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: pink;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: plum;
+    border: 2px salmon;
+}
+
+.iconos-redes-sociales a:hover {
+    color: burlywood;
+}
+
+.derechos-de-autor {
+    font-size: larger;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media  screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: ruby;
+    }
+} 
+
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
